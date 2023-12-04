@@ -24,7 +24,6 @@ Depends:
 	parallel,
 	psych,
 	RaingleExtremes,
-	SDMTools,
 	SpatialExtremes,
 	tidyr
 Suggests: testthat

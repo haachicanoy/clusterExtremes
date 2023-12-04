@@ -55,7 +55,7 @@ pnt.in.poly <- function(pnts,poly.pnts)
 	if (poly.pnts[1,1] == poly.pnts[nrow(poly.pnts),1] & poly.pnts[1,2] == poly.pnts[nrow(poly.pnts),2]) poly.pnts = poly.pnts[-1,]
 	
 	#run the point in polygon code
-	out = .Call('pip',pnts[,1],pnts[,2],nrow(pnts),poly.pnts[,1],poly.pnts[,2],nrow(poly.pnts),PACKAGE='SDMTools')
+	out = .Call('pip',pnts[,1],pnts[,2],nrow(pnts),poly.pnts[,1],poly.pnts[,2],nrow(poly.pnts),PACKAGE='clusterExtremes')
 	
 	#return the value
 	return(data.frame(pnts,pip=out))
