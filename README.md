@@ -12,3 +12,10 @@ See `CHANGELOG.md` for details.
 Academic reference: Saunders et al., (2021) A regionalisation approach for rainfall based on extremal dependence (https://doi.org/10.1007/s10687-020-00395-y).
 
 In order to align with the rest of the workflow, this forked version of the package must be installed on the machine that executes the scripts from the GitHub repository agroclimExtremes (https://github.com/haachicanoy/agroclimExtremes).
+
+```
+if(!require(devtools)) {install.packages('devtools');library(devtools)} else {library(devtools)}
+devtools::install_github('ropensci/rnoaa')
+devtools::install_github('katerobsau/RaingleExtremes')
+devtools::install_github('haachicanoy/clusterExtremes')
+```
